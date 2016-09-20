@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.homepage');
 });
+
+Route::post('uploadData', 'UploadController@uploadData');
